@@ -27,8 +27,8 @@ public class ConfigTest extends Ini4jCase
         Config def = newDefaultConfig();
 
         assertEquals(def, new Config());
-        assertEquals(def, Config.getGlobal());
-        assertEquals(def, Config.getGlobal().clone());
+        assertEquals(def, Config.getGloba());
+        assertEquals(def, Config.getGloba().clone());
     }
 
     @Test public void testSystemProperties()

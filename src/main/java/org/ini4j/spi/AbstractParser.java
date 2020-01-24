@@ -29,7 +29,7 @@ import java.util.Locale;
 abstract class AbstractParser
 {
     private final String _comments;
-    private Config _config = Config.getGlobal();
+    private Config _config = Config.getGloba();
     private final String _operators;
 
     protected AbstractParser(String operators, String comments)

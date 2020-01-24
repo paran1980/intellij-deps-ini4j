@@ -49,7 +49,7 @@ public class Reg extends BasicRegistry implements Registry, Persistable, Configu
 
     public Reg()
     {
-        Config cfg = Config.getGlobal().clone();
+        Config cfg = Config.getGloba().clone();
 
         cfg.setEscape(false);
         cfg.setGlobalSection(false);

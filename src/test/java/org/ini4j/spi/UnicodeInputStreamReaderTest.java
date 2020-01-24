@@ -165,7 +165,7 @@ public class UnicodeInputStreamReaderTest extends Ini4jCase
         UnicodeInputStreamReader reader = new UnicodeInputStreamReader(getClass().getResourceAsStream(filename), charset);
         Ini ini = new Ini();
 
-        ini.setConfig(Config.getGlobal().clone());
+        ini.setConfig(Config.getGloba().clone());
         ini.getConfig().setFileEncoding(charset);
         ini.load(reader);
         Ini.Section sec = ini.get("section");

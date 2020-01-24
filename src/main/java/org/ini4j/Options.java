@@ -42,7 +42,7 @@ public class Options extends BasicOptionMap implements Persistable, Configurable
 
     public Options()
     {
-        _config = Config.getGlobal().clone();
+        _config = Config.getGloba().clone();
         _config.setEmptyOption(true);
     }
 

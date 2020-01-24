@@ -24,7 +24,7 @@ abstract class AbstractFormatter implements HandlerBase
     private static final char OPERATOR = '=';
     private static final char COMMENT = '#';
     private static final char SPACE = ' ';
-    private Config _config = Config.getGlobal();
+    private Config _config = Config.getGloba();
     private boolean _header = true;
     private PrintWriter _output;
 
