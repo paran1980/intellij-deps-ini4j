@@ -27,8 +27,8 @@ public class ConfigTest extends Ini4jCase
         Config def = newDefaultConfig();
 
         assertEquals(def, new Config());
-        assertEquals(def, Config.getGloba());
-        assertEquals(def, Config.getGloba().clone());
+        assertEquals(def, Config.getGlobal());
+        assertEquals(def, Config.getGlobal().clone());
     }
 
     @Test public void testSystemProperties()
@@ -56,6 +56,7 @@ public class ConfigTest extends Ini4jCase
         setCharset(Config.PROP_FILE_ENCODING, exp.getFileEncoding());
         setBoolean(Config.PROP_COMMENT, exp.isComment());
         setBoolean(Config.PROP_HEADER_COMMENT, exp.isHeaderComment());
+        setBoolean(Config.PROP_TEST, true);
         Config cfg = new Config();
 
         assertEquals(exp, cfg);

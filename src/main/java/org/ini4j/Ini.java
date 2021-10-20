@@ -41,7 +41,7 @@ public class Ini extends BasicProfile implements Persistable, Configurable
 
     public Ini()
     {
-        _config = Config.getGloba();
+        _config = Config.getGlobal();
     }
 
     public Ini(Reader input) throws IOException {
