@@ -31,7 +31,7 @@ public class Wini extends Ini
 
     public Wini()
     {
-        Config cfg = Config.getGloba().clone();
+        Config cfg = Config.getGlobal().clone();
 
         cfg.setEscape(false);
         cfg.setEscapeNewline(false);
