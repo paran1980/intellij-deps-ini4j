@@ -56,6 +56,7 @@ public class ConfigTest extends Ini4jCase
         setCharset(Config.PROP_FILE_ENCODING, exp.getFileEncoding());
         setBoolean(Config.PROP_COMMENT, exp.isComment());
         setBoolean(Config.PROP_HEADER_COMMENT, exp.isHeaderComment());
+        setBoolean(Config.PROP_TEST, true);
         Config cfg = new Config();
 
         assertEquals(exp, cfg);
