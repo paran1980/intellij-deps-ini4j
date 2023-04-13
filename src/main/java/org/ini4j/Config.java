@@ -120,6 +120,7 @@ public class Config implements Cloneable, Serializable
 
     public static Config getGlobal()
     {
+        System.out.println("This is a test line");
         return GLOBAL;
     }
 
