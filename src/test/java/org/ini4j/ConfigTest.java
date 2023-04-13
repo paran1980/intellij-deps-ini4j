@@ -57,6 +57,8 @@ public class ConfigTest extends Ini4jCase
         setBoolean(Config.PROP_COMMENT, exp.isComment());
         setBoolean(Config.PROP_HEADER_COMMENT, exp.isHeaderComment());
         setBoolean(Config.PROP_TEST, true);
+
+        setBoolean(Config.PROP_TEST, true);
         Config cfg = new Config();
 
         assertEquals(exp, cfg);
